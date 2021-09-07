@@ -23,8 +23,8 @@ class Supply(models.Model):
     supply_date = models.DateTimeField(auto_now_add=True)
     quantity = models.FloatField("supply product quantity")
 
-    def __str__(self):
-        return self.id
+    def __repr__(self):
+        return self.quantity
 
 
 class Sale(models.Model):
@@ -33,5 +33,5 @@ class Sale(models.Model):
     sale_date = models.DateTimeField(auto_now_add=True)
     quantity = models.FloatField("sale product quantity")
 
-    def __str__(self):
-        return self.id
+    def __repr__(self):
+        return self.quantity

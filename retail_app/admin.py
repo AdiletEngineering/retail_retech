@@ -9,10 +9,10 @@ class StoreAdmin(admin.ModelAdmin):
     list_display = ('id', 'branch_name', 'location')
 
 class SupplyAdmin(admin.ModelAdmin):
-    list_display = ('id', 'products', 'stores', 'supply_date')
+    list_display = ('id', 'products', 'stores', 'supply_date', 'quantity')
 
 class SaleAdmin(admin.ModelAdmin):
-    list_display = ('id', 'products', 'stores', 'sale_date')
+    list_display = ('id', 'products', 'stores', 'sale_date', 'quantity')
 
 
 admin.site.register(Product, ProductAdmin)

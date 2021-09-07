@@ -41,6 +41,7 @@ cover/
 *.pot
 *.log
 local_settings.py
+*.sqlite3
 db.sqlite3
 db.sqlite3-journal
 instance/
@@ -81,6 +82,7 @@ cython_debug/
 [Ss]cripts
 pyvenv.cfg
 pip-selfcheck.json
+migrations
 .idea
 .idea/**/workspace.xml
 .idea/**/tasks.xml
